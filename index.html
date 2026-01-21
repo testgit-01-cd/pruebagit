@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Flow</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #2f81f7;
+            --text-main: #c9d1d9;
+            --text-bright: #ffffff;
+            --git-orange: #f05032;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--bg-color);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-main);
+        }
+
+        .container {
+            text-align: center;
+            padding: 3rem;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #30363d;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, var(--git-orange), #ff8c00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #8b949e;
+            font-size: 1.1rem;
+        }
+
+        .line {
+            height: 4px;
+            width: 60px;
+            background-color: var(--accent-color);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        /* Pequeño efecto de parpadeo tipo terminal */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background-color: var(--accent-color);
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="subtitle">$ git --status</div>
+        <h1>Funcionamiento Git</h1>
+        <div class="line"></div>
+        <div class="subtitle">Control de versiones descentralizado<span class="cursor">&nbsp;</span></div>
+    </div>
+
+</body>
+</html>
